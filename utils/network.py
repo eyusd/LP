@@ -87,7 +87,7 @@ class Network():
                         tf.tile(tf.expand_dims([d_out[2][0]], 0),[50,1]), tf.tile(tf.expand_dims(d_out[3][0], 0),[50,1,1]))
         self.createGraphs((d_in[0][0], d_in[1][0], d_in[2][0]),
                           (d_out[0][0], d_out[1][0], d_out[2][0], d_out[3][0]), 
-                          self.model(d_in_graphs, training=True, use_dropout=True))
+                          self.runmodel(d_in_graphs, training=True, use_dropout=True))
         if pnt:
             print("  Validation Loss: {:.6f}".format(np.mean(val_loss)))
         return np.mean(val_loss)
@@ -97,9 +97,8 @@ class Network():
         batch_size = tf.shape(d_in[1])[0]
         initial_state = [start_joints, tf.zeros(shape=[batch_size, 32], dtype=tf.float32)]
         inp = (d_in[0], d_in[1], d_in[2][:,0,:])
-        (action, phase, weights, atn_t, dm_t), new_states = self.model(inputs = inp, states=initial_state, training=training, use_dropout=use_dropout)
+        (action, phase, weights, atn_t, dmp_dt), new_states = self.model(inputs = inp, states=initial_state, training=training, use_dropout=use_dropout)
 
-        dmp_dt = dm_t
         action_list = [action]
         phase_list = [phase]
         weights_list = [weights]
@@ -112,20 +111,15 @@ class Network():
             action_list.append(action)
             phase_list.append(phase)
             weights_list.append(weights)
-            atn_t_list.append(atn_t)
+            atn_t_list.append(atn_t) # NAN ERROR
         dmp_dt += 0.1
         result = tf.stack(action_list, axis=1), (atn_t_list[-1], dmp_dt, tf.stack(phase_list, axis=1), tf.stack(weights_list, axis=1))
         return result
-    
-    def runmodel2(self, d_in, training=False, use_dropout=True):
-        start_joints = d_in[2][:,0,:]
-        batch_size = tf.shape(d_in[1])[0]
-        initial_state = [start_joints, tf.zeros(shape=[batch_size, 32], dtype=tf.float32)]
         
 
     def step(self, d_in, d_out, train):
         with tf.GradientTape() as tape:
-            result = self.model(d_in, training=train)
+            result = self.runmodel(d_in, training=train)
             loss, (atn, trj, dt, phs, wght) = self.calculateLoss(d_out, result, train)
         if train:
             gradients = tape.gradient(loss, self.model.getVariables(self.global_step))
@@ -135,7 +129,7 @@ class Network():
             self.tboard.addTrainScalar("Loss Trajectory", trj, self.global_step)
             self.tboard.addTrainScalar("Loss Phase", phs, self.global_step)
             self.tboard.addTrainScalar("Loss Weight", wght, self.global_step)
-            self.tboard.addTrainScalar("Loss Delta T", dt, self.global_step)
+            #self.tboard.addTrainScalar("Loss Delta T", dt, self.global_step) # !NAN!
         else:
             if self.last_written_step != self.global_step:
                 self.last_written_step = self.global_step
@@ -144,7 +138,7 @@ class Network():
                 self.tboard.addValidationScalar("Loss Trajectory", trj, self.global_step)
                 self.tboard.addValidationScalar("Loss Phase", phs, self.global_step)
                 self.tboard.addValidationScalar("Loss Weight", wght, self.global_step)
-                self.tboard.addValidationScalar("Loss Delta T", dt, self.global_step)
+                #self.tboard.addValidationScalar("Loss Delta T", dt, self.global_step) # !NAN!
                 if loss < self.global_best_loss:
                     self.global_best_loss = loss
                     self.model.saveModelToFile(self.logname + "/best/")

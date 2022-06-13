@@ -7,7 +7,7 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 import sys
 import rclpy
 from policy_translation.srv import NetworkPT, TuneNetwork
-from model_src.newmodel2 import PolicyTranslationModel
+from model_src.newmodel import PolicyTranslationModel
 from utils.network import Network
 from utils.tf_util import trainOnCPU, limitGPUMemory
 from utils.intprim.gaussian_model import GaussianModel
