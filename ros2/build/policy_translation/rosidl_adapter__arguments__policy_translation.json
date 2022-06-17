@@ -1,0 +1,8 @@
+{
+  "package_name": "policy_translation",
+  "non_idl_tuples": [
+    "/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/src/policy_translation:srv/NetworkPT.srv",
+    "/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/src/policy_translation:srv/TuneNetwork.srv",
+    "/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/src/policy_translation:msg/Dummy.msg"
+  ]
+}

@@ -3,6 +3,8 @@
 import tensorflow as tf
 from model_src.basismodel import BasisModel
 
+# tf.debugging.enable_check_numerics
+
 class FeedbackController(tf.keras.layers.Layer):
     def __init__(self, robot_state_size, rnn_state_size, dimensions, basis_functions, special, **kwargs):
         super(FeedbackController, self).__init__(**kwargs)
@@ -154,7 +156,7 @@ class PolicyTranslationModel(tf.keras.Model):
             ), 
         return_sequences=True)
            
-    # @tf.function 
+    @tf.function 
     def call(self, inputs, training=False, use_dropout=True):
         if training:
             use_dropout = True

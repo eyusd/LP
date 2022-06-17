@@ -28,7 +28,8 @@ FORCE_CPU    = True
 # Use dropout at run-time for stochastif-forward passes
 USE_DROPOUT  = True
 # Where can we find the trained model?
-MODEL_PATH   = "../GDrive/model/policy_translation"
+MODEL_PATH   = "/home/ybkim95/PyRep/LanguagePolicies_clement/Data/Model/vg4E8rErVOM/best/policy_translation"
+#"/home/ybkim95/PyRep/LanguagePolicies_clement/Data/Model/2RBL46oJm0N/best/policy_translation" #"../GDrive/model/policy_translation"
 # Where is a pre-trained faster-rcnn?
 FRCNN_PATH   = "../GDrive/rcnn"
 # Where are the GloVe word embeddings?
@@ -49,11 +50,17 @@ model = PolicyTranslationModel(
 )
 
 bs = 2
-model((
-    np.ones((bs, 15), dtype=np.int64),
-    np.ones((bs, 6, 5), dtype=np.float32),
-    np.ones((bs, 500, 7), dtype=np.float32)
-))
+model(
+    (
+    np.ones((bs, 15), dtype=np.int64), 
+    np.ones((bs, 6, 5), dtype=np.float32), 
+    np.ones((bs, 7), dtype=np.float32)
+    ),
+    (
+    np.ones((bs, 7), dtype=np.float32), 
+    np.ones((bs, 32), dtype=np.float32) 
+    ),
+)
 model.load_weights(MODEL_PATH)
 model.summary()
 
@@ -61,13 +68,39 @@ class NetworkService():
     def __init__(self):
         self.dictionary    = self._loadDictionary(GLOVE_PATH)
         self.regex         = re.compile('[^a-z ]')
-        self.bridge        = CvBridge()
+        # self.bridge        = CvBridge()
         self.history       = []
         rclpy.init(args=None)
         self.node = rclpy.create_node("neural_network")
         self.service_nn = self.node.create_service(NetworkPT,   "/network",      self.cbk_network_dmp_ros2)
         self.normalization = pickle.load(open(NORM_PATH, mode="rb"), encoding="latin1")
         print("Ready")
+    
+    def runmodel(self, d_in, training=False, use_dropout=True):
+        start_joints = d_in[2][:,0,:]
+        batch_size = tf.shape(d_in[1])[0]
+        initial_state = [start_joints, tf.zeros(shape=[batch_size, 32], dtype=tf.float32)]
+        inp = (d_in[0], d_in[1], d_in[2][:,0,:])
+
+        (action, phase, weights, atn_t, dmp_dt), new_states = model(inputs = inp, states=initial_state, training=training, use_dropout=use_dropout)
+
+        action_list = [action]
+        phase_list = [phase]
+        weights_list = [weights]
+        atn_t_list = [atn_t]
+
+        for i in range(1,d_in[2].shape[1]):
+            inp = (d_in[0], d_in[1], d_in[2][:,i,:])
+            (action, phase, weights, atn_t, dm_t), new_states = model(inputs = inp, states=new_states, training=training, use_dropout=use_dropout)
+
+            action_list.append(action)
+            phase_list.append(phase)
+            weights_list.append(weights)
+            atn_t_list.append(atn_t) # NAN ERROR
+        
+        dmp_dt += 0.1
+        result = tf.stack(action_list, axis=1), (atn_t_list[-1], dmp_dt, tf.stack(phase_list, axis=1), tf.stack(weights_list, axis=1))
+        return result
 
     def runNode(self):
         while rclpy.ok():
@@ -185,13 +218,20 @@ class NetworkService():
         self.history.append(list(req.robot)) 
 
         robot           = np.asarray(self.history, dtype=np.float32)
+        # print("robot:", robot)
         self.input_data = (
             tf.convert_to_tensor(np.tile([self.language],[250, 1]), dtype=tf.int64), 
             tf.convert_to_tensor(np.tile([self.features],[250, 1, 1]), dtype=tf.float32),
             tf.convert_to_tensor(np.tile([robot],[250, 1, 1]), dtype=tf.float32)
         )
 
-        generated, (atn, dmp_dt, phase, weights) = model(self.input_data, training=tf.constant(False), use_dropout=tf.constant(True))
+        d_in = (
+            tf.convert_to_tensor(np.tile([self.language],[250, 1]), dtype=tf.int64), 
+            tf.convert_to_tensor(np.tile([self.features],[250, 1, 1]), dtype=tf.float32),
+            tf.convert_to_tensor(np.tile([robot],[250, 1, 1]), dtype=tf.float32)
+        )
+
+        generated, (atn, dmp_dt, phase, weights) = self.runmodel(d_in) #model(self.input_data, states= ??, training=tf.constant(False), use_dropout=tf.constant(True))
         self.trj_gen    = tf.math.reduce_mean(generated, axis=0).numpy()
         self.trj_std    = tf.math.reduce_std(generated, axis=0).numpy()
         self.timesteps  = int(tf.math.reduce_mean(dmp_dt).numpy() * 500)

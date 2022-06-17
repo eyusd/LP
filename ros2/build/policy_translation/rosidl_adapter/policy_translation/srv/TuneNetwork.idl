@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from policy_translation/srv/TuneNetwork.srv
+// generated code does not contain a copyright notice
+
+
+module policy_translation {
+  module srv {
+    struct TuneNetwork_Request {
+      int32 epochs;
+    };
+    struct TuneNetwork_Response {
+      boolean success;
+    };
+  };
+};

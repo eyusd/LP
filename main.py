@@ -15,6 +15,8 @@ import shutil
 import os.path
 import sys
 
+# tf.debugging.enable_check_numerics
+
 # Location of the training data
 TRAIN_DATA      = "../GDrive/train.tfrecord"
 # Location of the validation data

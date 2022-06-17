@@ -1,0 +1,91 @@
+Epoch:   1/200
+2022-06-14 14:11:09.359013: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+   2500/ 2500 [#########################] Loss: 1.649887 | 1.297858
+Running full validation...
+  Validation Loss: 1.186455
+Epoch:   2/200
+   2500/ 2500 [#########################] Loss: 1.077848 | 0.726648
+Running full validation...
+  Validation Loss: 0.993152
+Epoch:   3/200
+   2500/ 2500 [#########################] Loss: 0.920432 | 0.945315
+Running full validation...
+  Validation Loss: 0.876175
+Epoch:   4/200
+   2500/ 2500 [#########################] Loss: 0.818719 | 0.875829
+Running full validation...
+  Validation Loss: 0.792991
+Epoch:   5/200
+   2500/ 2500 [#########################] Loss: 0.756821 | 0.892349
+Running full validation...
+  Validation Loss: 0.745524
+Epoch:   6/200
+   2500/ 2500 [#########################] Loss: 0.712910 | 0.490995
+Running full validation...
+  Validation Loss: 0.710472
+Epoch:   7/200
+   2500/ 2500 [#########################] Loss: 0.677689 | 0.486141
+Running full validation...
+  Validation Loss: 0.678802
+Epoch:   8/200
+   2500/ 2500 [#########################] Loss: 0.645811 | 0.827983
+Running full validation...
+  Validation Loss: 0.651094
+Epoch:   9/200
+   2500/ 2500 [#########################] Loss: 0.618362 | 0.516378
+Running full validation...
+  Validation Loss: 0.621195
+Epoch:  10/200
+   2500/ 2500 [#########################] Loss: 0.594102 | 0.619242
+Running full validation...
+  Validation Loss: 0.596893
+Epoch:  11/200
+   2500/ 2500 [#########################] Loss: 0.572010 | 0.724963
+Running full validation...
+  Validation Loss: 0.574160
+Epoch:  12/200
+   2500/ 2500 [#########################] Loss: 0.553183 | 0.345607
+Running full validation...
+  Validation Loss: 0.558042
+Epoch:  13/200
+   2500/ 2500 [#########################] Loss: 0.533774 | 0.440748
+Running full validation...
+  Validation Loss: 0.535838
+Epoch:  14/200
+   2500/ 2500 [#########################] Loss: 0.518005 | 0.459766
+Running full validation...
+  Validation Loss: 0.519953
+Epoch:  15/200
+   2500/ 2500 [#########################] Loss: 0.504155 | 0.620213
+Running full validation...
+  Validation Loss: 0.506660
+Epoch:  16/200
+   2500/ 2500 [#########################] Loss: 0.490746 | 0.525658
+Running full validation...
+  Validation Loss: 0.491775
+Epoch:  17/200
+   2500/ 2500 [#########################] Loss: 0.478826 | 0.651672
+Running full validation...
+  Validation Loss: 0.484661
+Epoch:  18/200
+   2500/ 2500 [#########################] Loss: 0.468050 | 0.154361
+Running full validation...
+  Validation Loss: 0.473290
+Epoch:  19/200
+   2500/ 2500 [#########################] Loss: 0.457676 | 0.262071
+Running full validation...
+  Validation Loss: 0.464976
+Epoch:  20/200
+   2500/ 2500 [#########################] Loss: 0.448053 | 0.513320
+Running full validation...
+  Validation Loss: 0.457085
+Epoch:  21/200
+   2500/ 2500 [#########################] Loss: 0.438831 | 0.286917
+Running full validation...
+  Validation Loss: 0.448117
+Epoch:  22/200
+   2500/ 2500 [#########################] Loss: 0.429776 | 0.631933
+Running full validation...
+  Validation Loss: 0.442534
+Epoch:  23/200
+    796/ 2500 [#######                  ] Loss: 0.452968 | 0.413552

@@ -1,0 +1,32 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from policy_translation/srv/NetworkPT.srv
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/Image.idl"
+
+module policy_translation {
+  module srv {
+    struct NetworkPT_Request {
+      sensor_msgs::msg::Image image;
+
+      string language;
+
+      sequence<float> robot;
+
+      boolean reset;
+
+      boolean plot;
+    };
+    struct NetworkPT_Response {
+      sequence<float> trajectory;
+
+      sequence<float> confidence;
+
+      int32 timesteps;
+
+      sequence<float> weights;
+
+      float phase;
+    };
+  };
+};

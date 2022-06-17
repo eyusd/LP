@@ -11,6 +11,8 @@ import pycurl
 import pickle
 import os
 
+# tf.debugging.enable_check_numerics
+
 class Network():
     def __init__(self, model, logname, lr, lw_atn, lw_w, lw_trj, lw_dt, lw_phs, log_freq=25):
         self.optimizer         = tf.keras.optimizers.Adam(learning_rate=lr, beta_1=0.9, beta_2=0.999)
@@ -92,11 +94,17 @@ class Network():
             print("  Validation Loss: {:.6f}".format(np.mean(val_loss)))
         return np.mean(val_loss)
     
+    # check
     def runmodel(self, d_in, training=False, use_dropout=True):
         start_joints = d_in[2][:,0,:]
         batch_size = tf.shape(d_in[1])[0]
         initial_state = [start_joints, tf.zeros(shape=[batch_size, 32], dtype=tf.float32)]
         inp = (d_in[0], d_in[1], d_in[2][:,0,:])
+        print("inputs:", inp)
+        print("states:", initial_state)
+        print("training:", training)
+        print("use_dropout:", use_dropout)
+        print()
         (action, phase, weights, atn_t, dmp_dt), new_states = self.model(inputs = inp, states=initial_state, training=training, use_dropout=use_dropout)
 
         action_list = [action]
@@ -112,6 +120,7 @@ class Network():
             phase_list.append(phase)
             weights_list.append(weights)
             atn_t_list.append(atn_t) # NAN ERROR
+        
         dmp_dt += 0.1
         result = tf.stack(action_list, axis=1), (atn_t_list[-1], dmp_dt, tf.stack(phase_list, axis=1), tf.stack(weights_list, axis=1))
         return result
@@ -119,7 +128,10 @@ class Network():
 
     def step(self, d_in, d_out, train):
         with tf.GradientTape() as tape:
+            # check runmodel
             result = self.runmodel(d_in, training=train)
+            
+            # check result
             loss, (atn, trj, dt, phs, wght) = self.calculateLoss(d_out, result, train)
         if train:
             gradients = tape.gradient(loss, self.model.getVariables(self.global_step))
@@ -129,7 +141,8 @@ class Network():
             self.tboard.addTrainScalar("Loss Trajectory", trj, self.global_step)
             self.tboard.addTrainScalar("Loss Phase", phs, self.global_step)
             self.tboard.addTrainScalar("Loss Weight", wght, self.global_step)
-            #self.tboard.addTrainScalar("Loss Delta T", dt, self.global_step) # !NAN!
+            # FIXME
+            self.tboard.addTrainScalar("Loss Delta T", dt, self.global_step) # !NAN!
         else:
             if self.last_written_step != self.global_step:
                 self.last_written_step = self.global_step
@@ -138,7 +151,8 @@ class Network():
                 self.tboard.addValidationScalar("Loss Trajectory", trj, self.global_step)
                 self.tboard.addValidationScalar("Loss Phase", phs, self.global_step)
                 self.tboard.addValidationScalar("Loss Weight", wght, self.global_step)
-                #self.tboard.addValidationScalar("Loss Delta T", dt, self.global_step) # !NAN!
+                # FIXME
+                self.tboard.addValidationScalar("Loss Delta T", dt, self.global_step) # !NAN!
                 if loss < self.global_best_loss:
                     self.global_best_loss = loss
                     self.model.saveModelToFile(self.logname + "/best/")
@@ -172,6 +186,9 @@ class Network():
         
         atn_loss = self.loss(y_true=attention, y_pred=atn)
 
+        # print("delta_t:", delta_t)
+        # print("dmp_dt[:,0]:", dmp_dt[:,0])
+
         dt_loss  = tf.math.reduce_mean(tf.keras.metrics.mean_squared_error(delta_t, dmp_dt[:,0]))
         
         trj_loss = self.calculateMSEWithPaddingMask(generated, gen_trj, tf.tile([[weight_dim]], [16, 350, 1]))
@@ -182,6 +199,10 @@ class Network():
 
         weight_loss = tf.math.reduce_mean(tf.keras.metrics.mean_squared_error(wght[:,:-1,:,:], tf.roll(wght, shift=-1, axis=1)[:,:-1,:,:]), axis=-1)
         weight_loss = tf.math.reduce_mean(tf.math.multiply(weight_loss, loss_atn[:,:-1]))
+
+        # print("=======================================================================================")
+        # print("calculated dt_loss:", dt_loss)
+        # print()
 
         return (atn_loss * self.lw_atn +
                 trj_loss * self.lw_trj +

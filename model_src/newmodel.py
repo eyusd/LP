@@ -7,6 +7,8 @@ from model_src.glove import GloveEmbeddings
 from model_src.dmp import DynamicMovementPrimitive
 from model_src.basismodel import BasisModel
 
+# tf.debugging.enable_check_numerics
+
 class PolicyTranslationModel(tf.keras.Model):
     def __init__(self, od_path, glove_path, special=None):
         super(PolicyTranslationModel, self).__init__(name="policy_translation")
@@ -47,6 +49,7 @@ class PolicyTranslationModel(tf.keras.Model):
            
     @tf.function
     def call(self, inputs, states, training=False, use_dropout=True):
+        # def call(self, inputs, training=False, use_dropout=True):
         if training:
             use_dropout = True
 
@@ -71,11 +74,16 @@ class PolicyTranslationModel(tf.keras.Model):
 
         # Policy Translation: Create weight + goal for DMP
         pt          = self.pt_global(cfeatures)
+        # print("pt:", pt)
         pt          = self.dout(pt, training=tf.convert_to_tensor(use_dropout))
-        dmp_dt      = self.pt_dt_2(self.pt_dt_1(pt))
+        # tf.add(pt, 1e-4)
+        # print("pt:", pt)
+        dmp_dt      = self.pt_dt_2(self.pt_dt_1(pt)) + 0.1
+        # print("dmp_dt:", dmp_dt)
+
+        # print()
 
 
-        
         ###Controller
         st_robot_last  = states[0]
         st_robot_gru_last    = states[1]
@@ -102,6 +110,8 @@ class PolicyTranslationModel(tf.keras.Model):
 
         # Rebuild the state:
         new_states = (action, robot_gru_state[0])
+
+        # print("dmp_dt in newmodel:", dmp_dt)
 
         return (action, phase, weights, atn, dmp_dt), new_states
         

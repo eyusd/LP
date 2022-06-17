@@ -1,0 +1,236 @@
+[0.000000] (-) TimerEvent: {}
+[0.000426] (policy_translation) JobQueued: {'identifier': 'policy_translation', 'dependencies': OrderedDict()}
+[0.000580] (policy_translation) JobStarted: {'identifier': 'policy_translation'}
+[0.007622] (policy_translation) JobProgress: {'identifier': 'policy_translation', 'progress': 'cmake'}
+[0.008903] (policy_translation) JobProgress: {'identifier': 'policy_translation', 'progress': 'build'}
+[0.008939] (policy_translation) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/build/policy_translation', '--', '-j12', '-l12'], 'cwd': '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/build/policy_translation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(LP)'), ('USER', 'ybkim95'), ('LC_TIME', 'ko_KR.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1594'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib:/usr/local/cuda-10.2/lib64:::/home/ybkim95/CoppeliaSim_Pro_V4_1_0_Ubuntu18_04'), ('NEST_PYTHON_PREFIX', '/usr/lib/python3.6/dist-packages'), ('NEST_DOC_DIR', '/usr/share/doc/nest'), ('SHLVL', '1'), ('CONDA_SHLVL', '2'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/ybkim95'), ('OLDPWD', '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('NEST_MODULE_PATH', '/usr/lib/nest'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('QT_QPA_PLATFORM_PLUGIN_PATH', '/home/ybkim95/CoppeliaSim_Pro_V4_1_0_Ubuntu18_04'), ('COPPELIASIM_ROOT', '/home/ybkim95/CoppeliaSim_Pro_V4_1_0_Ubuntu18_04'), ('NEST_INSTALL_DIR', '/usr'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'ybkim95'), ('GTK_IM_MODULE', 'ibus'), ('DESKTOP_AUTOSTART_ID', '101983cb79fb6640e4165518311292530000000015170007'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'ybkim95'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/eloquent/bin:/usr/local/cuda-10.2/bin:/home/ybkim95/anaconda3/envs/LP/bin:/home/ybkim95/anaconda3/condabin:/home/ybkim95/.local/bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ybkim95/.local/bin'), ('SESSION_MANAGER', 'local/ybkim95-XPS-15-7590:@/tmp/.ICE-unix/1517,unix/ybkim95-XPS-15-7590:/tmp/.ICE-unix/1517'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a5f660cc_3af9_4c7d_9aa2_0043d66305d7'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('CONDA_PREFIX_1', '/home/ybkim95/anaconda3'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/eloquent'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('CONDA_PYTHON_EXE', '/home/ybkim95/anaconda3/bin/python'), ('LC_NAME', 'ko_KR.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'LP'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/build/policy_translation'), ('CUDA_HOME', '/usr/local/cuda-10.2'), ('CLUTTER_IM_MODULE', 'xim'), ('CONDA_EXE', '/home/ybkim95/anaconda3/bin/conda'), ('NEST_DATA_DIR', '/usr/share/nest'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/eloquent/lib/python3.6/site-packages:/usr/lib/python3.6/dist-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('CONDA_PREFIX', '/home/ybkim95/anaconda3/envs/LP'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/eloquent')]), 'shell': False}
+[0.044183] (policy_translation) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.052330] (policy_translation) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.099412] (-) TimerEvent: {}
+[0.199733] (-) TimerEvent: {}
+[0.300046] (-) TimerEvent: {}
+[0.400411] (-) TimerEvent: {}
+[0.459632] (policy_translation) StdoutLine: {'line': b'[  4%] Built target policy_translation__cpp\n'}
+[0.470056] (policy_translation) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[0.470220] (policy_translation) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[0.500512] (-) TimerEvent: {}
+[0.532348] (policy_translation) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target policy_translation__rosidl_generator_c\x1b[0m\n'}
+[0.548587] (policy_translation) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/policy_translation__rosidl_generator_c.dir/rosidl_generator_c/policy_translation/srv/network_pt__functions.c.o\x1b[0m\n'}
+[0.548844] (policy_translation) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/policy_translation__rosidl_generator_c.dir/rosidl_generator_c/policy_translation/srv/tune_network__functions.c.o\x1b[0m\n'}
+[0.551958] (policy_translation) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/policy_translation__rosidl_generator_c.dir/rosidl_generator_c/policy_translation/msg/dummy__functions.c.o\x1b[0m\n'}
+[0.592553] (policy_translation) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library libpolicy_translation__rosidl_generator_c.so\x1b[0m\n'}
+[0.600590] (-) TimerEvent: {}
+[0.636102] (policy_translation) StdoutLine: {'line': b'[ 17%] Built target policy_translation__rosidl_generator_c\n'}
+[0.646795] (policy_translation) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[0.700708] (-) TimerEvent: {}
+[0.801008] (-) TimerEvent: {}
+[0.889114] (policy_translation) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target policy_translation__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[0.901086] (-) TimerEvent: {}
+[0.909994] (policy_translation) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/policy_translation/msg/dummy__type_support.cpp.o\x1b[0m\n'}
+[0.910178] (policy_translation) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/policy_translation/srv/network_pt__type_support.cpp.o\x1b[0m\n'}
+[0.910270] (policy_translation) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/policy_translation/srv/tune_network__type_support.cpp.o\x1b[0m\n'}
+[0.950230] (policy_translation) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target policy_translation__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[0.983331] (policy_translation) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/policy_translation/msg/dds_fastrtps/dummy__type_support.cpp.o\x1b[0m\n'}
+[0.986699] (policy_translation) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/policy_translation/srv/dds_fastrtps/tune_network__type_support.cpp.o\x1b[0m\n'}
+[0.986967] (policy_translation) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/policy_translation/srv/dds_fastrtps/network_pt__type_support.cpp.o\x1b[0m\n'}
+[1.001199] (-) TimerEvent: {}
+[1.101553] (-) TimerEvent: {}
+[1.104808] (policy_translation) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target policy_translation__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.127729] (policy_translation) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/policy_translation__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/policy_translation/srv/network_pt__type_support.c.o\x1b[0m\n'}
+[1.127955] (policy_translation) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/policy_translation__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/policy_translation/srv/tune_network__type_support.c.o\x1b[0m\n'}
+[1.128085] (policy_translation) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/policy_translation__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/policy_translation/msg/dummy__type_support.c.o\x1b[0m\n'}
+[1.170882] (policy_translation) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking C shared library libpolicy_translation__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[1.201648] (-) TimerEvent: {}
+[1.212861] (policy_translation) StdoutLine: {'line': b'[ 42%] Built target policy_translation__rosidl_typesupport_introspection_c\n'}
+[1.300718] (policy_translation) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library libpolicy_translation__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[1.301725] (-) TimerEvent: {}
+[1.375426] (policy_translation) StdoutLine: {'line': b'[ 44%] Built target policy_translation__rosidl_typesupport_introspection_cpp\n'}
+[1.401855] (-) TimerEvent: {}
+[1.410627] (policy_translation) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libpolicy_translation__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[1.482643] (policy_translation) StdoutLine: {'line': b'[ 46%] Built target policy_translation__rosidl_typesupport_fastrtps_cpp\n'}
+[1.491895] (policy_translation) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.492050] (policy_translation) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.501960] (-) TimerEvent: {}
+[1.602205] (-) TimerEvent: {}
+[1.702479] (-) TimerEvent: {}
+[1.802763] (-) TimerEvent: {}
+[1.852483] (policy_translation) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target policy_translation__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.873875] (policy_translation) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/policy_translation/srv/tune_network__type_support.cpp.o\x1b[0m\n'}
+[1.874062] (policy_translation) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/policy_translation/msg/dummy__type_support.cpp.o\x1b[0m\n'}
+[1.874162] (policy_translation) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/policy_translation/srv/network_pt__type_support.cpp.o\x1b[0m\n'}
+[1.902891] (-) TimerEvent: {}
+[1.940817] (policy_translation) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target policy_translation__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[1.963781] (policy_translation) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/policy_translation/msg/dummy__type_support_c.cpp.o\x1b[0m\n'}
+[1.964042] (policy_translation) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/policy_translation/srv/tune_network__type_support_c.cpp.o\x1b[0m\n'}
+[1.964641] (policy_translation) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/policy_translation/srv/network_pt__type_support_c.cpp.o\x1b[0m\n'}
+[2.002994] (-) TimerEvent: {}
+[2.103308] (-) TimerEvent: {}
+[2.177063] (policy_translation) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libpolicy_translation__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.203413] (-) TimerEvent: {}
+[2.265683] (policy_translation) StdoutLine: {'line': b'[ 66%] Built target policy_translation__rosidl_typesupport_cpp\n'}
+[2.268320] (policy_translation) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libpolicy_translation__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.303536] (-) TimerEvent: {}
+[2.347994] (policy_translation) StdoutLine: {'line': b'[ 68%] Built target policy_translation__rosidl_typesupport_fastrtps_c\n'}
+[2.356807] (policy_translation) StdoutLine: {'line': b'[ 71%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.403652] (-) TimerEvent: {}
+[2.503924] (-) TimerEvent: {}
+[2.604198] (-) TimerEvent: {}
+[2.692466] (policy_translation) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target policy_translation__rosidl_typesupport_c\x1b[0m\n'}
+[2.704315] (-) TimerEvent: {}
+[2.707303] (policy_translation) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_c.dir/rosidl_typesupport_c/policy_translation/srv/tune_network__type_support.cpp.o\x1b[0m\n'}
+[2.707452] (policy_translation) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_c.dir/rosidl_typesupport_c/policy_translation/msg/dummy__type_support.cpp.o\x1b[0m\n'}
+[2.707528] (policy_translation) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_c.dir/rosidl_typesupport_c/policy_translation/srv/network_pt__type_support.cpp.o\x1b[0m\n'}
+[2.731146] (policy_translation) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libpolicy_translation__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.786952] (policy_translation) StdoutLine: {'line': b'[ 80%] Built target policy_translation__rosidl_typesupport_c\n'}
+[2.794575] (policy_translation) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target policy_translation\x1b[0m\n'}
+[2.802711] (policy_translation) StdoutLine: {'line': b'[ 80%] Built target policy_translation\n'}
+[2.804383] (-) TimerEvent: {}
+[2.810801] (policy_translation) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target policy_translation__py\x1b[0m\n'}
+[2.819699] (policy_translation) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.904515] (-) TimerEvent: {}
+[3.004780] (-) TimerEvent: {}
+[3.105035] (-) TimerEvent: {}
+[3.205361] (-) TimerEvent: {}
+[3.305632] (-) TimerEvent: {}
+[3.405902] (-) TimerEvent: {}
+[3.506167] (-) TimerEvent: {}
+[3.606418] (-) TimerEvent: {}
+[3.651217] (policy_translation) StdoutLine: {'line': b'[ 82%] Built target policy_translation__py\n'}
+[3.659334] (policy_translation) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target policy_translation__python\x1b[0m\n'}
+[3.690213] (policy_translation) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/policy_translation__python.dir/rosidl_generator_py/policy_translation/srv/_network_pt_s.c.o\x1b[0m\n'}
+[3.690534] (policy_translation) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/policy_translation__python.dir/rosidl_generator_py/policy_translation/srv/_tune_network_s.c.o\x1b[0m\n'}
+[3.690616] (policy_translation) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/policy_translation__python.dir/rosidl_generator_py/policy_translation/msg/_dummy_s.c.o\x1b[0m\n'}
+[3.706517] (-) TimerEvent: {}
+[3.788785] (policy_translation) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/policy_translation/libpolicy_translation__python.so\x1b[0m\n'}
+[3.806633] (-) TimerEvent: {}
+[3.851357] (policy_translation) StdoutLine: {'line': b'[ 91%] Built target policy_translation__python\n'}
+[3.860124] (policy_translation) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target policy_translation__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[3.860387] (policy_translation) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target policy_translation__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[3.877107] (policy_translation) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/policy_translation__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/policy_translation/_policy_translation_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.877351] (policy_translation) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/policy_translation__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/policy_translation/_policy_translation_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.906766] (-) TimerEvent: {}
+[3.947698] (policy_translation) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/policy_translation/policy_translation_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.947868] (policy_translation) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/policy_translation/policy_translation_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.006866] (-) TimerEvent: {}
+[4.031130] (policy_translation) StdoutLine: {'line': b'[100%] Built target policy_translation__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.031355] (policy_translation) StdoutLine: {'line': b'[100%] Built target policy_translation__rosidl_typesupport_c__pyext\n'}
+[4.040185] (policy_translation) CommandEnded: {'returncode': 0}
+[4.099083] (policy_translation) JobProgress: {'identifier': 'policy_translation', 'progress': 'install'}
+[4.106979] (-) TimerEvent: {}
+[4.107755] (policy_translation) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/build/policy_translation', '--target', 'install', '--', '-j12', '-l12'], 'cwd': '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/build/policy_translation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(LP)'), ('USER', 'ybkim95'), ('LC_TIME', 'ko_KR.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1594'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/x86_64-linux-gnu:/opt/ros/eloquent/lib:/usr/local/cuda-10.2/lib64:::/home/ybkim95/CoppeliaSim_Pro_V4_1_0_Ubuntu18_04'), ('NEST_PYTHON_PREFIX', '/usr/lib/python3.6/dist-packages'), ('NEST_DOC_DIR', '/usr/share/doc/nest'), ('SHLVL', '1'), ('CONDA_SHLVL', '2'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/ybkim95'), ('OLDPWD', '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('NEST_MODULE_PATH', '/usr/lib/nest'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('QT_QPA_PLATFORM_PLUGIN_PATH', '/home/ybkim95/CoppeliaSim_Pro_V4_1_0_Ubuntu18_04'), ('COPPELIASIM_ROOT', '/home/ybkim95/CoppeliaSim_Pro_V4_1_0_Ubuntu18_04'), ('NEST_INSTALL_DIR', '/usr'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'ybkim95'), ('GTK_IM_MODULE', 'ibus'), ('DESKTOP_AUTOSTART_ID', '101983cb79fb6640e4165518311292530000000015170007'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USERNAME', 'ybkim95'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/eloquent/bin:/usr/local/cuda-10.2/bin:/home/ybkim95/anaconda3/envs/LP/bin:/home/ybkim95/anaconda3/condabin:/home/ybkim95/.local/bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ybkim95/.local/bin'), ('SESSION_MANAGER', 'local/ybkim95-XPS-15-7590:@/tmp/.ICE-unix/1517,unix/ybkim95-XPS-15-7590:/tmp/.ICE-unix/1517'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a5f660cc_3af9_4c7d_9aa2_0043d66305d7'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('CONDA_PREFIX_1', '/home/ybkim95/anaconda3'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('GNOME_TERMINAL_SERVICE', ':1.88'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/eloquent'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('CONDA_PYTHON_EXE', '/home/ybkim95/anaconda3/bin/python'), ('LC_NAME', 'ko_KR.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'LP'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/build/policy_translation'), ('CUDA_HOME', '/usr/local/cuda-10.2'), ('CLUTTER_IM_MODULE', 'xim'), ('CONDA_EXE', '/home/ybkim95/anaconda3/bin/conda'), ('NEST_DATA_DIR', '/usr/share/nest'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('PYTHONPATH', '/opt/ros/eloquent/lib/python3.6/site-packages:/usr/lib/python3.6/dist-packages'), ('LC_PAPER', 'ko_KR.UTF-8'), ('CONDA_PREFIX', '/home/ybkim95/anaconda3/envs/LP'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/eloquent')]), 'shell': False}
+[4.165174] (policy_translation) StdoutLine: {'line': b'[  2%] Built target policy_translation__cpp\n'}
+[4.169047] (policy_translation) StdoutLine: {'line': b'[ 13%] Built target policy_translation__rosidl_generator_c\n'}
+[4.198789] (policy_translation) StdoutLine: {'line': b'[ 24%] Built target policy_translation__rosidl_typesupport_introspection_c\n'}
+[4.199010] (policy_translation) StdoutLine: {'line': b'[ 35%] Built target policy_translation__rosidl_typesupport_introspection_cpp\n'}
+[4.202916] (policy_translation) StdoutLine: {'line': b'[ 46%] Built target policy_translation__rosidl_typesupport_fastrtps_cpp\n'}
+[4.207071] (-) TimerEvent: {}
+[4.232410] (policy_translation) StdoutLine: {'line': b'[ 64%] Built target policy_translation__rosidl_typesupport_cpp\n'}
+[4.232577] (policy_translation) StdoutLine: {'line': b'[ 68%] Built target policy_translation__rosidl_typesupport_fastrtps_c\n'}
+[4.255170] (policy_translation) StdoutLine: {'line': b'[ 80%] Built target policy_translation__rosidl_typesupport_c\n'}
+[4.271089] (policy_translation) StdoutLine: {'line': b'[ 80%] Built target policy_translation\n'}
+[4.287715] (policy_translation) StdoutLine: {'line': b'[ 82%] Built target policy_translation__py\n'}
+[4.307185] (-) TimerEvent: {}
+[4.311261] (policy_translation) StdoutLine: {'line': b'[ 91%] Built target policy_translation__python\n'}
+[4.334830] (policy_translation) StdoutLine: {'line': b'[ 95%] Built target policy_translation__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.335021] (policy_translation) StdoutLine: {'line': b'[100%] Built target policy_translation__rosidl_typesupport_c__pyext\n'}
+[4.350384] (policy_translation) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[4.357289] (policy_translation) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.357885] (policy_translation) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.361059] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/ament_index/resource_index/rosidl_interfaces/policy_translation\n'}
+[4.368350] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/libpolicy_translation__rosidl_typesupport_c.so\n'}
+[4.375313] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/environment/library_path.sh\n'}
+[4.382297] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/environment/library_path.dsv\n'}
+[4.389272] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/libpolicy_translation__rosidl_typesupport_cpp.so\n'}
+[4.396529] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy__rosidl_typesupport_fastrtps_c.h\n'}
+[4.403379] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.407282] (-) TimerEvent: {}
+[4.409800] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt__rosidl_typesupport_fastrtps_c.h\n'}
+[4.416196] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network__rosidl_typesupport_fastrtps_c.h\n'}
+[4.423023] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/libpolicy_translation__rosidl_typesupport_fastrtps_c.so\n'}
+[4.430209] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy.h\n'}
+[4.437168] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy__functions.h\n'}
+[4.443751] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy__struct.h\n'}
+[4.450407] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy__type_support.h\n'}
+[4.457072] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.463622] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt.h\n'}
+[4.470506] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt__functions.h\n'}
+[4.477013] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt__struct.h\n'}
+[4.483765] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt__type_support.h\n'}
+[4.490682] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network.h\n'}
+[4.497520] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network__functions.h\n'}
+[4.504683] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network__struct.h\n'}
+[4.507386] (-) TimerEvent: {}
+[4.511713] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network__type_support.h\n'}
+[4.519112] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/libpolicy_translation__rosidl_generator_c.so\n'}
+[4.526405] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.533211] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.540361] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.546877] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.553580] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/libpolicy_translation__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.560301] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy.hpp\n'}
+[4.566745] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy__struct.hpp\n'}
+[4.573233] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy__traits.hpp\n'}
+[4.579626] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt.hpp\n'}
+[4.586094] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt__struct.hpp\n'}
+[4.592539] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt__traits.hpp\n'}
+[4.599254] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network.hpp\n'}
+[4.605649] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network__struct.hpp\n'}
+[4.607488] (-) TimerEvent: {}
+[4.612179] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network__traits.hpp\n'}
+[4.619136] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy__rosidl_typesupport_introspection_c.h\n'}
+[4.625787] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.632658] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt__rosidl_typesupport_introspection_c.h\n'}
+[4.639477] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network__rosidl_typesupport_introspection_c.h\n'}
+[4.646588] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/libpolicy_translation__rosidl_typesupport_introspection_c.so\n'}
+[4.653755] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.660644] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.667584] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.674714] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/libpolicy_translation__rosidl_typesupport_introspection_cpp.so\n'}
+[4.681536] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/environment/pythonpath.sh\n'}
+[4.688358] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/environment/pythonpath.dsv\n'}
+[4.695374] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages/policy_translation/__init__.py\n'}
+[4.702451] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages/policy_translation/srv/__init__.py\n'}
+[4.707600] (-) TimerEvent: {}
+[4.709150] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages/policy_translation/srv/_network_pt.py\n'}
+[4.715921] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages/policy_translation/srv/_tune_network.py\n'}
+[4.723021] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages/policy_translation/msg/__init__.py\n'}
+[4.729822] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages/policy_translation/msg/_dummy.py\n'}
+[4.736927] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages/policy_translation/policy_translation_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[4.744293] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages/policy_translation/policy_translation_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[4.751345] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/libpolicy_translation__python.so\n'}
+[4.758555] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/srv/NetworkPT.idl\n'}
+[4.765420] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/srv/TuneNetwork.idl\n'}
+[4.772370] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/msg/Dummy.idl\n'}
+[4.779301] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/srv/NetworkPT.srv\n'}
+[4.786187] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/srv/NetworkPT_Request.msg\n'}
+[4.793067] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/srv/NetworkPT_Response.msg\n'}
+[4.799939] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/srv/TuneNetwork.srv\n'}
+[4.806973] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/srv/TuneNetwork_Request.msg\n'}
+[4.807742] (-) TimerEvent: {}
+[4.813948] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/srv/TuneNetwork_Response.msg\n'}
+[4.820847] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/msg/Dummy.msg\n'}
+[4.827949] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/ament_index/resource_index/package_run_dependencies/policy_translation\n'}
+[4.835013] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/ament_index/resource_index/parent_prefix_path/policy_translation\n'}
+[4.842097] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/environment/ament_prefix_path.sh\n'}
+[4.849034] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/environment/ament_prefix_path.dsv\n'}
+[4.856169] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/environment/path.sh\n'}
+[4.863254] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/environment/path.dsv\n'}
+[4.870225] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/local_setup.bash\n'}
+[4.877194] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/local_setup.sh\n'}
+[4.884163] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/local_setup.zsh\n'}
+[4.891062] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/local_setup.dsv\n'}
+[4.898083] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/package.dsv\n'}
+[4.905260] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/ament_index/resource_index/packages/policy_translation\n'}
+[4.907796] (-) TimerEvent: {}
+[4.912216] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/cmake/rosidl_cmake-extras.cmake\n'}
+[4.919259] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.926263] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.933247] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.940435] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/cmake/policy_translationConfig.cmake\n'}
+[4.947305] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/cmake/policy_translationConfig-version.cmake\n'}
+[4.954454] (policy_translation) StdoutLine: {'line': b'-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/package.xml\n'}
+[4.988234] (policy_translation) StdoutLine: {'line': b"Compiling '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages/policy_translation/__init__.py'...\n"}
+[4.993895] (policy_translation) CommandEnded: {'returncode': 0}
+[5.008020] (-) TimerEvent: {}
+[5.088984] (policy_translation) JobEnded: {'identifier': 'policy_translation', 'rc': 0}
+[5.090077] (-) EventReactorShutdown: {}

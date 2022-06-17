@@ -1,0 +1,174 @@
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  4%] Built target policy_translation__cpp
+[  8%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[  8%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[35m[1mScanning dependencies of target policy_translation__rosidl_generator_c[0m
+[ 13%] [32mBuilding C object CMakeFiles/policy_translation__rosidl_generator_c.dir/rosidl_generator_c/policy_translation/srv/network_pt__functions.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/policy_translation__rosidl_generator_c.dir/rosidl_generator_c/policy_translation/srv/tune_network__functions.c.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/policy_translation__rosidl_generator_c.dir/rosidl_generator_c/policy_translation/msg/dummy__functions.c.o[0m
+[ 17%] [32m[1mLinking C shared library libpolicy_translation__rosidl_generator_c.so[0m
+[ 17%] Built target policy_translation__rosidl_generator_c
+[ 20%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[35m[1mScanning dependencies of target policy_translation__rosidl_typesupport_introspection_cpp[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/policy_translation/msg/dummy__type_support.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/policy_translation/srv/network_pt__type_support.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/policy_translation/srv/tune_network__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target policy_translation__rosidl_typesupport_fastrtps_cpp[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/policy_translation/msg/dds_fastrtps/dummy__type_support.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/policy_translation/srv/dds_fastrtps/tune_network__type_support.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/policy_translation/srv/dds_fastrtps/network_pt__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target policy_translation__rosidl_typesupport_introspection_c[0m
+[ 40%] [32mBuilding C object CMakeFiles/policy_translation__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/policy_translation/srv/network_pt__type_support.c.o[0m
+[ 40%] [32mBuilding C object CMakeFiles/policy_translation__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/policy_translation/srv/tune_network__type_support.c.o[0m
+[ 40%] [32mBuilding C object CMakeFiles/policy_translation__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/policy_translation/msg/dummy__type_support.c.o[0m
+[ 42%] [32m[1mLinking C shared library libpolicy_translation__rosidl_typesupport_introspection_c.so[0m
+[ 42%] Built target policy_translation__rosidl_typesupport_introspection_c
+[ 44%] [32m[1mLinking CXX shared library libpolicy_translation__rosidl_typesupport_introspection_cpp.so[0m
+[ 44%] Built target policy_translation__rosidl_typesupport_introspection_cpp
+[ 46%] [32m[1mLinking CXX shared library libpolicy_translation__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 46%] Built target policy_translation__rosidl_typesupport_fastrtps_cpp
+[ 51%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 51%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[35m[1mScanning dependencies of target policy_translation__rosidl_typesupport_cpp[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/policy_translation/srv/tune_network__type_support.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/policy_translation/msg/dummy__type_support.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/policy_translation/srv/network_pt__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target policy_translation__rosidl_typesupport_fastrtps_c[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/policy_translation/msg/dummy__type_support_c.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/policy_translation/srv/tune_network__type_support_c.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/policy_translation/srv/network_pt__type_support_c.cpp.o[0m
+[ 66%] [32m[1mLinking CXX shared library libpolicy_translation__rosidl_typesupport_cpp.so[0m
+[ 66%] Built target policy_translation__rosidl_typesupport_cpp
+[ 68%] [32m[1mLinking CXX shared library libpolicy_translation__rosidl_typesupport_fastrtps_c.so[0m
+[ 68%] Built target policy_translation__rosidl_typesupport_fastrtps_c
+[ 71%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[35m[1mScanning dependencies of target policy_translation__rosidl_typesupport_c[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_c.dir/rosidl_typesupport_c/policy_translation/srv/tune_network__type_support.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_c.dir/rosidl_typesupport_c/policy_translation/msg/dummy__type_support.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/policy_translation__rosidl_typesupport_c.dir/rosidl_typesupport_c/policy_translation/srv/network_pt__type_support.cpp.o[0m
+[ 80%] [32m[1mLinking CXX shared library libpolicy_translation__rosidl_typesupport_c.so[0m
+[ 80%] Built target policy_translation__rosidl_typesupport_c
+[35m[1mScanning dependencies of target policy_translation[0m
+[ 80%] Built target policy_translation
+[35m[1mScanning dependencies of target policy_translation__py[0m
+[ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 82%] Built target policy_translation__py
+[35m[1mScanning dependencies of target policy_translation__python[0m
+[ 86%] [32mBuilding C object CMakeFiles/policy_translation__python.dir/rosidl_generator_py/policy_translation/srv/_network_pt_s.c.o[0m
+[ 86%] [32mBuilding C object CMakeFiles/policy_translation__python.dir/rosidl_generator_py/policy_translation/srv/_tune_network_s.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/policy_translation__python.dir/rosidl_generator_py/policy_translation/msg/_dummy_s.c.o[0m
+[ 91%] [32m[1mLinking CXX shared library rosidl_generator_py/policy_translation/libpolicy_translation__python.so[0m
+[ 91%] Built target policy_translation__python
+[35m[1mScanning dependencies of target policy_translation__rosidl_typesupport_c__pyext[0m
+[35m[1mScanning dependencies of target policy_translation__rosidl_typesupport_fastrtps_c__pyext[0m
+[ 95%] [32mBuilding C object CMakeFiles/policy_translation__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/policy_translation/_policy_translation_s.ep.rosidl_typesupport_c.c.o[0m
+[ 95%] [32mBuilding C object CMakeFiles/policy_translation__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/policy_translation/_policy_translation_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[100%] [32m[1mLinking CXX shared library rosidl_generator_py/policy_translation/policy_translation_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking CXX shared library rosidl_generator_py/policy_translation/policy_translation_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so[0m
+[100%] Built target policy_translation__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target policy_translation__rosidl_typesupport_c__pyext
+[  2%] Built target policy_translation__cpp
+[ 13%] Built target policy_translation__rosidl_generator_c
+[ 24%] Built target policy_translation__rosidl_typesupport_introspection_c
+[ 35%] Built target policy_translation__rosidl_typesupport_introspection_cpp
+[ 46%] Built target policy_translation__rosidl_typesupport_fastrtps_cpp
+[ 64%] Built target policy_translation__rosidl_typesupport_cpp
+[ 68%] Built target policy_translation__rosidl_typesupport_fastrtps_c
+[ 80%] Built target policy_translation__rosidl_typesupport_c
+[ 80%] Built target policy_translation
+[ 82%] Built target policy_translation__py
+[ 91%] Built target policy_translation__python
+[ 95%] Built target policy_translation__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target policy_translation__rosidl_typesupport_c__pyext
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/ament_index/resource_index/rosidl_interfaces/policy_translation
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/libpolicy_translation__rosidl_typesupport_c.so
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/environment/library_path.sh
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/environment/library_path.dsv
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/libpolicy_translation__rosidl_typesupport_cpp.so
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/libpolicy_translation__rosidl_typesupport_fastrtps_c.so
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy__functions.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy__struct.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy__type_support.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/rosidl_generator_c__visibility_control.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt__functions.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt__struct.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt__type_support.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network__functions.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network__struct.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network__type_support.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/libpolicy_translation__rosidl_generator_c.so
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/libpolicy_translation__rosidl_typesupport_fastrtps_cpp.so
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy.hpp
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy__struct.hpp
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy__traits.hpp
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt.hpp
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt__struct.hpp
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt__traits.hpp
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network.hpp
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network__struct.hpp
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network__traits.hpp
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/libpolicy_translation__rosidl_typesupport_introspection_c.so
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/msg/dummy__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/network_pt__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/include/policy_translation/srv/tune_network__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/libpolicy_translation__rosidl_typesupport_introspection_cpp.so
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/environment/pythonpath.sh
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/environment/pythonpath.dsv
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages/policy_translation/__init__.py
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages/policy_translation/srv/__init__.py
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages/policy_translation/srv/_network_pt.py
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages/policy_translation/srv/_tune_network.py
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages/policy_translation/msg/__init__.py
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages/policy_translation/msg/_dummy.py
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages/policy_translation/policy_translation_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages/policy_translation/policy_translation_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/libpolicy_translation__python.so
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/srv/NetworkPT.idl
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/srv/TuneNetwork.idl
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/msg/Dummy.idl
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/srv/NetworkPT.srv
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/srv/NetworkPT_Request.msg
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/srv/NetworkPT_Response.msg
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/srv/TuneNetwork.srv
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/srv/TuneNetwork_Request.msg
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/srv/TuneNetwork_Response.msg
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/msg/Dummy.msg
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/ament_index/resource_index/package_run_dependencies/policy_translation
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/ament_index/resource_index/parent_prefix_path/policy_translation
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/environment/ament_prefix_path.sh
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/environment/path.sh
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/environment/path.dsv
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/local_setup.bash
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/local_setup.sh
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/local_setup.zsh
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/local_setup.dsv
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/package.dsv
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/ament_index/resource_index/packages/policy_translation
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/cmake/rosidl_cmake-extras.cmake
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/cmake/policy_translationConfig.cmake
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/cmake/policy_translationConfig-version.cmake
+-- Symlinking: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/package.xml
+Compiling '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages/policy_translation/__init__.py'...

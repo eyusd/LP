@@ -1,0 +1,110 @@
+-- Found ament_cmake: 0.8.3 (/opt/ros/eloquent/share/ament_cmake/cmake)
+-- Found PythonInterp: /home/ybkim95/anaconda3/envs/LP/bin/python3 (found suitable version "3.6.13", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /home/ybkim95/anaconda3/envs/LP/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_default_generators: 0.8.0 (/opt/ros/eloquent/share/rosidl_default_generators/cmake)
+-- Found rosidl_adapter: 0.8.3 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+-- Found sensor_msgs: 0.8.1 (/opt/ros/eloquent/share/sensor_msgs/cmake)
+-- Found PythonInterp: /home/ybkim95/anaconda3/envs/LP/bin/python3 (found version "3.6.13") 
+-- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c
+-- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp
+-- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+-- Found PythonInterp: /home/ybkim95/anaconda3/envs/LP/bin/python3 (found suitable version "3.6.13", minimum required is "3.5") 
+-- Found python_cmake_module: 0.8.0 (/opt/ros/eloquent/share/python_cmake_module/cmake)
+-- Found PythonLibs: /home/ybkim95/anaconda3/envs/LP/lib/libpython3.6m.so (found suitable version "3.6.13", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /home/ybkim95/anaconda3/envs/LP/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /home/ybkim95/anaconda3/envs/LP/include/python3.6m
+-- Using PYTHON_LIBRARIES: /home/ybkim95/anaconda3/envs/LP/lib/libpython3.6m.so
+-- Found PythonExtra: .so  
+-- Using numpy include directory: /home/ybkim95/.local/lib/python3.6/site-packages/numpy/core/include
+-- Found ament_lint_auto: 0.8.2 (/opt/ros/eloquent/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+CMake Warning at /opt/ros/eloquent/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:229 (add_library):
+  Cannot generate a safe runtime search path for target
+  policy_translation__rosidl_typesupport_fastrtps_c__pyext because files in
+  some directories may conflict with libraries in implicit directories:
+
+    runtime library [libssl.so.1.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/ybkim95/anaconda3/envs/LP/lib
+    runtime library [libcrypto.so.1.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/ybkim95/anaconda3/envs/LP/lib
+
+  Some of these libraries may not be found correctly.
+Call Stack (most recent call first):
+  /opt/ros/eloquent/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/eloquent/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:26 (rosidl_generate_interfaces)
+
+
+CMake Warning at /opt/ros/eloquent/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:176 (add_library):
+  Cannot generate a safe runtime search path for target
+  policy_translation__python because files in some directories may conflict
+  with libraries in implicit directories:
+
+    runtime library [libssl.so.1.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/ybkim95/anaconda3/envs/LP/lib
+    runtime library [libcrypto.so.1.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/ybkim95/anaconda3/envs/LP/lib
+
+  Some of these libraries may not be found correctly.
+Call Stack (most recent call first):
+  /opt/ros/eloquent/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/eloquent/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:26 (rosidl_generate_interfaces)
+
+
+CMake Warning at /opt/ros/eloquent/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:229 (add_library):
+  Cannot generate a safe runtime search path for target
+  policy_translation__rosidl_typesupport_c__pyext because files in some
+  directories may conflict with libraries in implicit directories:
+
+    runtime library [libssl.so.1.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/ybkim95/anaconda3/envs/LP/lib
+    runtime library [libcrypto.so.1.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/ybkim95/anaconda3/envs/LP/lib
+
+  Some of these libraries may not be found correctly.
+Call Stack (most recent call first):
+  /opt/ros/eloquent/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/eloquent/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:26 (rosidl_generate_interfaces)
+
+
+-- Generating done
+-- Build files have been written to: /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/build/policy_translation
+[35m[1mScanning dependencies of target policy_translation__cpp[0m
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+Traceback (most recent call last):
+  File "/opt/ros/eloquent/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 8, in <module>
+    from rosidl_generator_c import generate_c
+  File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_generator_c/__init__.py", line 15, in <module>
+    from rosidl_cmake import convert_camel_case_to_lower_case_underscore
+  File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_cmake/__init__.py", line 24, in <module>
+    from rosidl_parser.parser import parse_idl_file
+  File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_parser/parser.py", line 20, in <module>
+    from lark import Lark
+ModuleNotFoundError: No module named 'lark'
+CMakeFiles/policy_translation__rosidl_generator_c.dir/build.make:165: recipe for target 'rosidl_generator_c/policy_translation/srv/network_pt.h' failed
+make[2]: *** [rosidl_generator_c/policy_translation/srv/network_pt.h] Error 1
+make[1]: *** [CMakeFiles/policy_translation__rosidl_generator_c.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+CMakeFiles/Makefile2:291: recipe for target 'CMakeFiles/policy_translation__rosidl_generator_c.dir/all' failed
+Traceback (most recent call last):
+  File "/opt/ros/eloquent/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 8, in <module>
+    from rosidl_generator_cpp import generate_cpp
+  File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_generator_cpp/__init__.py", line 17, in <module>
+    from rosidl_cmake import generate_files
+  File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_cmake/__init__.py", line 24, in <module>
+    from rosidl_parser.parser import parse_idl_file
+  File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_parser/parser.py", line 20, in <module>
+    from lark import Lark
+ModuleNotFoundError: No module named 'lark'
+CMakeFiles/policy_translation__cpp.dir/build.make:170: recipe for target 'rosidl_generator_cpp/policy_translation/srv/network_pt.hpp' failed
+make[2]: *** [rosidl_generator_cpp/policy_translation/srv/network_pt.hpp] Error 1
+make[1]: *** [CMakeFiles/policy_translation__cpp.dir/all] Error 2
+CMakeFiles/Makefile2:328: recipe for target 'CMakeFiles/policy_translation__cpp.dir/all' failed
+make: *** [all] Error 2
+Makefile:140: recipe for target 'all' failed

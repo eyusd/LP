@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/build/policy_translation/rosidl_generator_py/policy_translation/policy_translation_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so" "TARGETS" "policy_translation__rosidl_typesupport_c__pyext" "DESTINATION" "lib/python3.6/site-packages/policy_translation")

@@ -29,7 +29,7 @@ class DynamicMovementPrimitive(tf.keras.layers.Layer):
         self.basis_locations = tf.convert_to_tensor(self.basis_locations, dtype=tf.float32)
         self.basis_variance  = tf.convert_to_tensor(self.basis_variance,  dtype=tf.float32)
 
-    # @tf.function
+    @tf.function
     def call(self, inputs, states, constants=None, training=None, mask=None, **kwargs):
         current = inputs
         # weights = tf.transpose(constants[0], perm=[0, 2, 1])

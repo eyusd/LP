@@ -1,0 +1,156 @@
+[0.120s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.120s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f73abc45ef0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f73abc45ef0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f73abc53278>)
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.139s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/policy_translation) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/policy_translation) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/policy_translation) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/policy_translation) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/policy_translation) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/policy_translation) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/policy_translation) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/policy_translation) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/policy_translation) by extension 'ros'
+[0.158s] DEBUG:colcon.colcon_core.package_identification:Package 'src/policy_translation' with type 'ros.ament_cmake' and name 'policy_translation'
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.174s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 227 installed packages in /opt/ros/eloquent
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'policy_translation' build argument 'cmake_args' from command line to 'None'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'policy_translation' build argument 'cmake_target' from command line to 'None'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'policy_translation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'policy_translation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'policy_translation' build argument 'cmake_clean_first' from command line to 'False'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'policy_translation' build argument 'cmake_force_configure' from command line to 'False'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'policy_translation' build argument 'ament_cmake_args' from command line to 'None'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'policy_translation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.225s] Level 5:colcon.colcon_core.verb:set package 'policy_translation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.225s] DEBUG:colcon.colcon_core.verb:Building package 'policy_translation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/build/policy_translation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation', 'merge_install': False, 'path': '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/src/policy_translation', 'symlink_install': True, 'test_result_base': None}
+[0.226s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.227s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.227s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/src/policy_translation' with build type 'ament_cmake'
+[0.227s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/src/policy_translation'
+[0.230s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.230s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.230s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.240s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/build/policy_translation': CMAKE_PREFIX_PATH=/opt/ros/eloquent CONDA_PROMPT_MODIFIER=(LP) /usr/bin/cmake --build /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/build/policy_translation -- -j12 -l12
+[4.268s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/build/policy_translation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/eloquent CONDA_PROMPT_MODIFIER=(LP) /usr/bin/cmake --build /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/build/policy_translation -- -j12 -l12
+[4.336s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/build/policy_translation': CMAKE_PREFIX_PATH=/opt/ros/eloquent CONDA_PROMPT_MODIFIER=(LP) /usr/bin/cmake --build /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/build/policy_translation --target install -- -j12 -l12
+[5.221s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(policy_translation)
+[5.222s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/build/policy_translation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/eloquent CONDA_PROMPT_MODIFIER=(LP) /usr/bin/cmake --build /home/ybkim95/PyRep/LanguagePolicies_clement/ros2/build/policy_translation --target install -- -j12 -l12
+[5.225s] Level 1:colcon.colcon_core.environment:checking '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation' for CMake module files
+[5.225s] Level 1:colcon.colcon_core.environment:checking '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation' for CMake config files
+[5.226s] Level 1:colcon.colcon_core.shell:create_environment_hook('policy_translation', 'cmake_prefix_path')
+[5.226s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/hook/cmake_prefix_path.ps1'
+[5.235s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/hook/cmake_prefix_path.dsv'
+[5.236s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/hook/cmake_prefix_path.sh'
+[5.237s] Level 1:colcon.colcon_core.environment:checking '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib'
+[5.237s] Level 1:colcon.colcon_core.shell:create_environment_hook('policy_translation', 'ld_library_path_lib')
+[5.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/hook/ld_library_path_lib.ps1'
+[5.238s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/hook/ld_library_path_lib.dsv'
+[5.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/hook/ld_library_path_lib.sh'
+[5.238s] Level 1:colcon.colcon_core.environment:checking '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/bin'
+[5.238s] Level 1:colcon.colcon_core.environment:checking '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/pkgconfig/policy_translation.pc'
+[5.238s] Level 1:colcon.colcon_core.environment:checking '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages'
+[5.238s] Level 1:colcon.colcon_core.shell:create_environment_hook('policy_translation', 'pythonpath')
+[5.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/hook/pythonpath.ps1'
+[5.239s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/hook/pythonpath.dsv'
+[5.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/hook/pythonpath.sh'
+[5.240s] Level 1:colcon.colcon_core.environment:checking '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/bin'
+[5.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/package.ps1'
+[5.241s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/package.dsv'
+[5.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/package.sh'
+[5.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/package.bash'
+[5.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/package.zsh'
+[5.243s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/colcon-core/packages/policy_translation)
+[5.308s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(policy_translation)
+[5.308s] Level 1:colcon.colcon_core.environment:checking '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation' for CMake module files
+[5.309s] Level 1:colcon.colcon_core.environment:checking '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation' for CMake config files
+[5.309s] Level 1:colcon.colcon_core.shell:create_environment_hook('policy_translation', 'cmake_prefix_path')
+[5.310s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/hook/cmake_prefix_path.ps1'
+[5.310s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/hook/cmake_prefix_path.dsv'
+[5.310s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/hook/cmake_prefix_path.sh'
+[5.311s] Level 1:colcon.colcon_core.environment:checking '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib'
+[5.311s] Level 1:colcon.colcon_core.shell:create_environment_hook('policy_translation', 'ld_library_path_lib')
+[5.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/hook/ld_library_path_lib.ps1'
+[5.312s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/hook/ld_library_path_lib.dsv'
+[5.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/hook/ld_library_path_lib.sh'
+[5.312s] Level 1:colcon.colcon_core.environment:checking '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/bin'
+[5.312s] Level 1:colcon.colcon_core.environment:checking '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/pkgconfig/policy_translation.pc'
+[5.313s] Level 1:colcon.colcon_core.environment:checking '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/lib/python3.6/site-packages'
+[5.313s] Level 1:colcon.colcon_core.shell:create_environment_hook('policy_translation', 'pythonpath')
+[5.313s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/hook/pythonpath.ps1'
+[5.313s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/hook/pythonpath.dsv'
+[5.314s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/hook/pythonpath.sh'
+[5.314s] Level 1:colcon.colcon_core.environment:checking '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/bin'
+[5.314s] INFO:colcon.colcon_core.shell:Creating package script '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/package.ps1'
+[5.315s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/package.dsv'
+[5.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/package.sh'
+[5.316s] INFO:colcon.colcon_core.shell:Creating package script '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/package.bash'
+[5.316s] INFO:colcon.colcon_core.shell:Creating package script '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/policy_translation/package.zsh'
+[5.316s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/policy_translation/share/colcon-core/packages/policy_translation)
+[5.317s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.318s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.318s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.318s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.322s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.322s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.322s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.325s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.326s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/local_setup.ps1'
+[5.327s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/_local_setup_util_ps1.py'
+[5.328s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/setup.ps1'
+[5.329s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/local_setup.sh'
+[5.329s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/_local_setup_util_sh.py'
+[5.330s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/setup.sh'
+[5.331s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/local_setup.bash'
+[5.331s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/setup.bash'
+[5.332s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/local_setup.zsh'
+[5.332s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ybkim95/PyRep/LanguagePolicies_clement/ros2/install/setup.zsh'

@@ -23,7 +23,7 @@ class FeedbackController(tf.keras.layers.Layer):
 
         self.basismodel = BasisModel(dimensions=self.dims, nfunctions=self.n_bfuncs, scale=0.012)
 
-    # @tf.function
+    @tf.function
     def call(self, inputs, states, constants=None, training=False, mask=None, **kwargs):
         # Get data ready
         in_robot       = inputs

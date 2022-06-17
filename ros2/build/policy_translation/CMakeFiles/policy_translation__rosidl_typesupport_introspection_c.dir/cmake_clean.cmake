@@ -1,0 +1,18 @@
+file(REMOVE_RECURSE
+  "rosidl_typesupport_introspection_c/policy_translation/srv/network_pt__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/policy_translation/srv/tune_network__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/policy_translation/msg/dummy__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/policy_translation/srv/network_pt__type_support.c"
+  "rosidl_typesupport_introspection_c/policy_translation/srv/tune_network__type_support.c"
+  "rosidl_typesupport_introspection_c/policy_translation/msg/dummy__type_support.c"
+  "CMakeFiles/policy_translation__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/policy_translation/srv/network_pt__type_support.c.o"
+  "CMakeFiles/policy_translation__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/policy_translation/srv/tune_network__type_support.c.o"
+  "CMakeFiles/policy_translation__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/policy_translation/msg/dummy__type_support.c.o"
+  "libpolicy_translation__rosidl_typesupport_introspection_c.pdb"
+  "libpolicy_translation__rosidl_typesupport_introspection_c.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/policy_translation__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

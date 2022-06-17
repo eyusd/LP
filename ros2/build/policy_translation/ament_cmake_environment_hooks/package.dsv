@@ -1,0 +1,4 @@
+source;share/policy_translation/local_setup.bash
+source;share/policy_translation/local_setup.dsv
+source;share/policy_translation/local_setup.sh
+source;share/policy_translation/local_setup.zsh
